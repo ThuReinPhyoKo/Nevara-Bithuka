@@ -1,36 +1,169 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NAVERA BITHUKA
+
+A modern architecture studio portfolio built to showcase thoughtful design, smooth interactions, and high performance.
+
+Inspired by contemporary architecture websites, NAVERA BITHUKA combines clean typography, immersive imagery, and carefully crafted motion to create an engaging browsing experience while maintaining excellent performance and accessibility.
+
+---
+
+## Live Demo
+
+Coming soon
+
+---
+
+## Features
+
+* Modern architecture inspired user interface
+* Responsive design across desktop, tablet, and mobile
+* Smooth page transitions
+* GSAP powered animations
+* Split text hover animations
+* Parallax image effects
+* Horizontal scrolling sections
+* Optimized image loading with Next.js Image
+* Fast page navigation with the App Router
+* SEO friendly metadata
+* Accessible and keyboard-friendly interface
+* WCAG conscious design
+* Performance-focused implementation
+
+---
+
+## Built With
+
+* Next.js (App Router)
+* React
+* TypeScript
+* Tailwind CSS
+* GSAP
+* Lenis
+* ESLint
+
+---
+
+## Performance Goals
+
+This project is built with performance as a primary objective.
+
+* Optimized image loading
+* Lazy loaded media
+* Modern image formats where supported
+* Minimal client side JavaScript
+* Efficient animation lifecycle
+* Lighthouse friendly implementation
+* Core Web Vitals focused
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository.
+
+```bash
+git clone https://github.com/your-username/navera-bithuka.git
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Run the development server.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Starts the development server.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+Creates a production build.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Runs the production build locally.
+
+```bash
+npm run lint
+```
+
+Runs ESLint.
+
+---
+
+## Project Structure
+
+```text
+app/
+components/
+hooks/
+lib/
+public/
+styles/
+types/
+```
+
+---
+
+## Design Philosophy
+
+NAVERA BITHUKA focuses on quality over quantity. Every animation is designed to support the user experience rather than distract from it. Motion is subtle, typography is intentional, and layouts are built to let the architecture speak for itself.
+
+---
+
+## Accessibility
+
+The project aims to follow modern accessibility practices, including:
+
+* Semantic HTML
+* Keyboard navigation
+* Sufficient color contrast
+* Visible focus states
+* Reduced motion support where appropriate
+* Screen reader friendly markup
+
+---
+
+## Future Improvements
+
+* Dark mode
+* CMS integration
+* Project filtering
+* Image gallery enhancements
+* Contact form backend
+* Internationalization
+
+---
+
+## Credits
+
+Designed and developed by Ryan.
+
+Images are used for portfolio and demonstration purposes. All rights remain with their respective owners where applicable.
+
+---
+
+## License
+
+This project is available for educational and portfolio purposes.
