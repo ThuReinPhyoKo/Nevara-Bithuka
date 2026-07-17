@@ -6,11 +6,12 @@ import { useRef } from 'react'
 import gsap from 'gsap'
 
 type NavLinkProps = {
-  label: string
-  href: string
+  label: string,
+  href: string,
+  id: string,
 }
 
-export default function NavLink({ label, href }: NavLinkProps) {
+export default function NavLink({ label, href, id }: NavLinkProps) {
   const textRef = useRef<HTMLSpanElement>(null)
 
   const enter = () => {
@@ -32,6 +33,7 @@ export default function NavLink({ label, href }: NavLinkProps) {
   return (
     <Link
       href={href}
+      id={id}
       onMouseEnter={enter}
       onMouseLeave={leave}
       className="inline-block"

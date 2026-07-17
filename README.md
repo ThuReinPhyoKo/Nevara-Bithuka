@@ -14,31 +14,31 @@ Coming soon
 
 ## Features
 
-* Modern architecture inspired user interface
-* Responsive design across desktop, tablet, and mobile
-* Smooth page transitions
-* GSAP powered animations
-* Split text hover animations
-* Parallax image effects
-* Horizontal scrolling sections
-* Optimized image loading with Next.js Image
-* Fast page navigation with the App Router
-* SEO friendly metadata
-* Accessible and keyboard-friendly interface
-* WCAG conscious design
-* Performance-focused implementation
+- Modern architecture inspired user interface
+- Responsive design across desktop, tablet, and mobile
+- Smooth page transitions
+- GSAP powered animations
+- Split text hover animations
+- Parallax image effects
+- Horizontal scrolling sections
+- Optimized image loading with Next.js Image
+- Fast page navigation with the App Router
+- SEO friendly metadata
+- Accessible and keyboard-friendly interface
+- WCAG conscious design
+- Performance-focused implementation
 
 ---
 
 ## Built With
 
-* Next.js (App Router)
-* React
-* TypeScript
-* Tailwind CSS
-* GSAP
-* Lenis
-* ESLint
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- GSAP
+- Lenis
+- ESLint
 
 ---
 
@@ -46,13 +46,13 @@ Coming soon
 
 This project is built with performance as a primary objective.
 
-* Optimized image loading
-* Lazy loaded media
-* Modern image formats where supported
-* Minimal client side JavaScript
-* Efficient animation lifecycle
-* Lighthouse friendly implementation
-* Core Web Vitals focused
+- Optimized image loading
+- Lazy loaded media
+- Modern image formats where supported
+- Minimal client side JavaScript
+- Efficient animation lifecycle
+- Lighthouse friendly implementation
+- Core Web Vitals focused
 
 ---
 
@@ -61,7 +61,7 @@ This project is built with performance as a primary objective.
 Clone the repository.
 
 ```bash
-git clone https://github.com/your-username/navera-bithuka.git
+git clone https://github.com/ThuReinPhyoKo/Navera-Bithuka.git
 ```
 
 Install dependencies.
@@ -136,23 +136,23 @@ NAVERA BITHUKA focuses on quality over quantity. Every animation is designed to 
 
 The project aims to follow modern accessibility practices, including:
 
-* Semantic HTML
-* Keyboard navigation
-* Sufficient color contrast
-* Visible focus states
-* Reduced motion support where appropriate
-* Screen reader friendly markup
+- Semantic HTML
+- Keyboard navigation
+- Sufficient color contrast
+- Visible focus states
+- Reduced motion support where appropriate
+- Screen reader friendly markup
 
 ---
 
 ## Future Improvements
 
-* Dark mode
-* CMS integration
-* Project filtering
-* Image gallery enhancements
-* Contact form backend
-* Internationalization
+- Dark mode
+- CMS integration
+- Project filtering
+- Image gallery enhancements
+- Contact form backend
+- Internationalization
 
 ---
 

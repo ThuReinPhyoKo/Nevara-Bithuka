@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Bricolage_Grotesque, Oswald } from "next/font/google";
 import "./globals.css";
 import Nav from "@/app/components/navigation/nav";
+import SmoothScroll from "@/app/components/animation/smoothScroll";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -35,7 +36,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Nav />
-        {children}
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );
