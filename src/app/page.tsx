@@ -1,11 +1,14 @@
 'use client'
-import FeatStudio from "./components/sections/home/studio";
-import Hero from "./components/sections/home/hero";
+import OurApproach from "./components/sections/home/our-approach";
+import FeatWorks from "./components/sections/home/feat-works";
+import FeatStudio from "./components/sections/home/feat-studio";
+import Hero from "./components/sections/home/home-hero";
 import Menu from "./components/navigation/menu";
 import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Carousel from "./components/sections/home/carousel";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,10 +39,12 @@ export default function Home() {
     <main className="relative">
       <Hero />
       <Menu showMenu={showMenu} />
-      {/* <MenuButton /> */}
       <div ref={featStudioRef} className="w-auto h-auto">
         <FeatStudio />
       </div>
+      <FeatWorks />
+      <OurApproach />
+      <Carousel />
     </main>
   );
 }

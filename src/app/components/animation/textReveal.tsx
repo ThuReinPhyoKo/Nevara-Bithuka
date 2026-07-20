@@ -21,16 +21,16 @@ export default function TextReveal({ children }: TextRevealProps) {
 
         gsap.fromTo(
             element,
-            { y: 24, opacity: 0 },
+            { y: 100 },
             {
                 y: 0,
-                opacity: 1,
-                duration: 1.2,
-                ease: "power3.out",
+                duration: 0.7,
+                ease: "power4.inOut",
                 scrollTrigger: {
                     trigger: wrapperRef.current,
-                    start: "top 85%",
+                    start: "top 75%",
                     once: true,
+                    markers: true,
                 },
             }
         );
