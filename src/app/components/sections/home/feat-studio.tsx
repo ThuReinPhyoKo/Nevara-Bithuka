@@ -1,4 +1,4 @@
-import NavLink from "@/app/components/navigation/links";
+import NavLink from "@/app/components/layout/links";
 import Image from "next/image";
 import TextReveal from "@/app/components/animation/textReveal";
 import StudioImage from "@/app/components/animation/imageReveal";
@@ -60,7 +60,7 @@ export default function FeatStudio() {
                         />
                     </div>
                     <div className="max-w-87.5">
-                            <p className="text-xl"><span className="font-medium">NAVERA BITHUKA</span> is an architecture studio focused on creating thoughtful spaces that balance function, material, and human experience. We approach every project with careful attention to proportion, light, and the relationship between architecture and its surroundings.</p>
+                            <p className="text-xl"><span className="font-medium">NEVARA BITHUKA</span> is an architecture studio focused on creating thoughtful spaces that balance function, material, and human experience. We approach every project with careful attention to proportion, light, and the relationship between architecture and its surroundings.</p>
                     </div>
                 </div>
             </section>

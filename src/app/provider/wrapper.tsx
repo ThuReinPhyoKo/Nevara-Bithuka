@@ -1,6 +1,6 @@
 "use client"
 import { useRef } from "react"
-import Menu from "../components/navigation/menu"
+import Menu from "../components/layout/menu"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"

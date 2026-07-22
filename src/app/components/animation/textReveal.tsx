@@ -24,13 +24,12 @@ export default function TextReveal({ children }: TextRevealProps) {
             { y: 100 },
             {
                 y: 0,
-                duration: 0.7,
-                ease: "power4.inOut",
+                duration: 0.8,
+                ease: "power2.inOut",
                 scrollTrigger: {
                     trigger: wrapperRef.current,
-                    start: "top 75%",
+                    start: "top 85%",
                     once: true,
-                    markers: true,
                 },
             }
         );

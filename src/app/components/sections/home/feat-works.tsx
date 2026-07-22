@@ -1,4 +1,4 @@
-import NavLink from "../../navigation/links"
+import NavLink from "../../layout/links"
 import StudioImage from "../../animation/imageReveal"
 import TextReveal from "../../animation/textReveal"
 import Image from "next/image"

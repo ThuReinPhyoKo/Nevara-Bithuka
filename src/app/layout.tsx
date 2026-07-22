@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Bricolage_Grotesque, Oswald } from "next/font/google";
 import "./globals.css";
-import Nav from "@/app/components/navigation/nav";
+import Nav from "@/app/components/layout/nav";
 import SmoothScroll from "@/app/components/animation/smoothScroll";
+import Footer from "./components/layout/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -39,6 +40,7 @@ export default function RootLayout({
         <SmoothScroll>
           {children}
         </SmoothScroll>
+        <Footer />
       </body>
     </html>
   );
