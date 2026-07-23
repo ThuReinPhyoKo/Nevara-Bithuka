@@ -31,7 +31,7 @@ export default function Footer() {
                     </TextReveal>
                 </div>
             </div>
-            <div className="w-full flex flex-col justify-evenly">
+            <div className="w-full h-full flex flex-col justify-between">
                 <div className="flex justify-between py-6 px-10">
                     <ul className="ml-5 flex flex-col gap-2.5 text-4xl uppercase font-main font-bold tracking-widest">
                         <NavLink id="links" label="home" href="/" />

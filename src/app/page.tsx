@@ -1,4 +1,5 @@
 'use client'
+import CTA from "./components/sections/home/cta";
 import Carousel from "./components/sections/home/carousel";
 import OurApproach from "./components/sections/home/our-approach";
 import FeatWorks from "./components/sections/home/feat-works";
@@ -45,6 +46,7 @@ export default function Home() {
       <FeatWorks />
       <OurApproach />
       <Carousel />
+      <CTA />
     </main>
   );
 }

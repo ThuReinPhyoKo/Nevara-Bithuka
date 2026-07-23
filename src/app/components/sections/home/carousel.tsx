@@ -16,9 +16,11 @@ export default function Carousel() {
     useGSAP(() => {
         if (!containerRef.current || !contentRef.current) return;
 
-        const slideCount = contentRef.current.children.length
-        const slideWidth = containerRef.current.clientWidth || window.innerWidth
-        const distance = slideWidth * (slideCount - 1)
+        const totalWidth = contentRef.current.getBoundingClientRect().width
+        const viewportWidth = containerRef.current.clientWidth || window.innerWidth
+        const distance = totalWidth - viewportWidth
+
+        
 
         gsap.to(contentRef.current, {
             x: -distance,
@@ -38,7 +40,7 @@ export default function Carousel() {
     return (
         <section className="min-h-screen text-white">
             <div ref={containerRef} className="overflow-hidden">
-                <div ref={contentRef} className="flex w-max bg-black">
+                <div id="horizontal" ref={contentRef} className="flex w-max bg-[linear-gradient(to_bottom,#232526,#414345)]">
 
                     <div id="content-1" className="w-max h-screen flex p-10 gap-10">
                         <div className="absolute top-10 left-20">
@@ -52,11 +54,12 @@ export default function Carousel() {
                                 src="/assets/home/approach/approach1.avif"
                                 fill
                                 alt="approach-image"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                             />
                         </div>
-                        <div className="w-80 flex flex-col">
-                            <h3 className="uppercase font-main text-3xl mb-2">#1 sketch design</h3>
+                        <div className="w-80">
+                            <h3 className="uppercase font-oswald text-5xl mb-2">1. sketch design</h3>
                             <p className="pl-2">Every project begins with ideas translated into sketches and early concepts. We explore spatial relationships, form, and functionality to establish a clear design direction.</p>
                         </div>
                     </div>
@@ -66,6 +69,7 @@ export default function Carousel() {
                             <Image 
                              src="/assets/home/approach/approach2.webp"
                              fill
+                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                              alt="approach-image"
                             />
                         </div>
@@ -73,12 +77,13 @@ export default function Carousel() {
                             <Image 
                                 src="/assets/home/approach/approach3.avif"
                                 fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 alt="approach-image"
                                 className="object-cover"
                             />
                         </div>
                         <div className="w-96 flex flex-col gap-10">
-                            <h3 className="uppercase font-main text-3xl mb-2">#2 design development</h3>
+                            <h3 className="uppercase font-oswald text-5xl mb-2">2. design development</h3>
                             <p className="pl-2">Concepts are refined through detailed planning and thoughtful decisions. Materials, proportions, structure, and technical considerations are developed into a cohesive architectural vision.</p>
                         </div>
                         <div className="absolute bottom-10 right-20">
@@ -89,8 +94,52 @@ export default function Carousel() {
                         </div>
                     </div>
 
-                    <div id="content-3" className="w-screen h-screen  bg-lime-500">3</div>
-                    <div id="content-4" className="w-screen h-screen bg-cyan-500">4</div>
+                    <div id="content-3" className="w-max h-screen flex p-10 gap-10">
+                        <div className="flex flex-col">
+                            <h3 className="uppercase font-oswald text-5xl mb-2 mt-auto">3. interior design</h3>
+                            <div className="relative w-150 h-100 mt-auto">
+                                <Image 
+                                    src="/assets/home/approach/approach5.avif"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    alt="approach-image"
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+                        <div className="flex flex-col justify-between">
+                            <div className="relative w-130 h-80">
+                                <Image 
+                                    src="/assets/home/approach/approach4.webp"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    alt="approach-image"
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="w-110">
+                                {/* <h3 className="uppercase font-main text-3xl mb-2">#3 interior design</h3> */}
+                                <p className="pl-2">Interior spaces are designed to complement the architecture and enhance daily experience. We focus on atmosphere, comfort, materials, and details that create a unified environment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="content-4" className="w-screen h-screen flex p-10 gap-10">
+                        <div className="relative w-180 h-120">
+                            <Image 
+                                src="/assets/home/approach/approach6.avif"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                alt="approach-image"
+                                className="object-cover"
+                            />
+                        </div>
+                        <div className="w-110 flex flex-col justify-between">
+                            <p className="pl-2">Detailed drawings and documentation are prepared to guide the construction process with clarity and accuracy, ensuring the design intent is carried through to completion.</p>
+                            <h3 className="uppercase font-oswald text-5xl mb-2">4. construction plans + documentation</h3>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
